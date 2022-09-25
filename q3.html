@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Increment and Decrement</title>
+</head>
+
+<body>
+    <h1>Increment and Decrement counter</h1>
+    <div="container">
+        <button onclick="increment()">+</button>
+        <h2 id="counting"></h2>
+        <button onclick="decrement()">-</button>
+        </div>
+        <script>
+            var data = 0;
+            document.getElementById("counting").innerText = data;
+            let increment = () => {
+                data = data + 1;
+                document.getElementById("counting").innerText = data;
+            }
+            let decrement = () => {
+                data = data - 1;
+                document.getElementById("counting").innerText = data;
+            }
+        </script>
+</body>
+
+</html>
